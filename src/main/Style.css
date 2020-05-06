@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 4, 2019, 9:33:49 PM
+    Author     : Simon Dao
+*/
+#searchButton {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+}
+
+
+#ContactsPane {
+    -fx-background-color: #19b5fe;
+    -fx-border-color: #19b5fe;
+}
+
+#FriendScrollPane > .viewport {
+    -fx-background-color: #D5DBDB;
+    -fx-border-color:whitesmoke;
+}
+
+#TopPane {
+    -fx-background-color: #19b5fe;
+    -fx-border-color: #19b5fe;
+}
+
+#me {
+    -fx-background-color: #19b5fe;
+}
+
+#bottomPane {
+    -fx-background-color: #19b5fe;
+}
+
+#notificationMenu {
+    -fx-background-radius: 10;
+}
+
+.button {
+    -fx-background-color: #19b5fe;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-family: Open Sans;
+}
+
+.text-field {
+    -fx-background-color: #CFD8DC ;
+    -fx-background-radius: 20;
+    -fx-font-family: Open Sans;
+}
+
+
+/*
+.button:hover {
+    -fx-border-color: #1e90ff;
+    -fx-border-radius: 4;
+    -fx-border-width: 2;
+    -fx-background-color: white;
+    -fx-background-radius: 4;
+    -fx-text-fill: #1e90ff;
+    }
+ */
+
+
+/*
+.text {
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: white;
+    -fx-text-size: 500;
+    -fx-background-size: 3;
+}
+*/

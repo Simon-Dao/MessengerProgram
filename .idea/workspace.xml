@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4cfd249-7e40-436d-babc-5c4aac7f9228" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BoidSimulation/src/sample/Boid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoidSimulation/src/sample/BoundaryEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoidSimulation/src/sample/Boundry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoidSimulation/src/sample/ImprovedNoise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoidSimulation/src/sample/SensorRay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GeneticAlgorithm/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GeneticAlgorithm/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PathFinder/src/sample/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PathFinder/src/sample/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PathFinder/src/sample/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PathFinder/src/sample/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SoundCap/SoundCap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SqlApplication/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SqlApplication/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TankTrouble/src/main/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TankTrouble/src/main/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VectorSimulation/src/program/ImprovedNoise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VectorSimulation/src/program/Ligma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VectorSimulation/src/program/Panel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VectorSimulation/src/program/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CircleGame" beforeDir="false" afterPath="$PROJECT_DIR$/../CircleGame" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GitTest" beforeDir="false" afterPath="$PROJECT_DIR$/../GitTest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Green_House_Simulation" beforeDir="false" afterPath="$PROJECT_DIR$/../Green_House_Simulation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/.idea/Messenger.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/Messenger.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/META-INF/Messenger.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/client/Friend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/client/LocalUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/client/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/database/DataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/database/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/AppUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/AppUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/Contacts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/MessageArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/SearchBarSection$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/SearchBarSection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/UITools$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/UITools$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/UITools.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/gui/WindowControls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/main/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletePopup$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletePopup$SuggestionEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletePopup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletePopupSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletePopupSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionBinding$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionBinding$AutoCompletionEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionBinding$FetchSuggestionsTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionBinding$ISuggestionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionBinding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionTextFieldBinding$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionTextFieldBinding$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionTextFieldBinding$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/AutoCompletionTextFieldBinding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/CustomPasswordField$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/CustomPasswordField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/CustomTextField$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/CustomTextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/CustomTextFieldSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/SuggestionProvider$SuggestionProviderString$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/SuggestionProvider$SuggestionProviderString$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/SuggestionProvider$SuggestionProviderString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/SuggestionProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/TextFields$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/TextFields.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/popup/autocompletion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/res/arrow_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/res/noun_Arrow_2427329.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/res/noun_Friend_2326312.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/server/ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/server/DataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/out/production/Messenger/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/client/Friend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/client/LocalUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/database/DataBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/database/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/gui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/main/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/AutoCompletePopup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/AutoCompletePopupSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/AutoCompletionBinding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/AutoCompletionTextFieldBinding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/CustomPasswordField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/CustomTextField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/CustomTextFieldSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/SuggestionProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/TextFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/autocompletion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/popup/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/res/arrow_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/res/noun_Arrow_2427329.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/res/noun_Friend_2326312.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/server/ClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/src/server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messenger/userinfo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/MessengerApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/client/Friend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/client/LocalUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/database/DataBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/database/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/Contacts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/LoginWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/MessageArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/SearchBarSection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/SignUpWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/gui/WindowControls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/main/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/AutoCompletePopup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/AutoCompletePopupSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/AutoCompletionBinding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/AutoCompletionTextFieldBinding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/CustomPasswordField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/CustomTextField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/CustomTextFieldSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/SuggestionProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/TextFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/autocompletion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/popup/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/res/arrow_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/res/noun_Arrow_2427329.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/res/noun_Friend_2326312.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/server/ClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessengerApp/src/src/server/Server.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-399">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-741">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588743872048" />
+    <property name="last_opened_file_path" value="C:/Program Files/MySQL/mysql-connector-java-8.0.19/mysql-connector-java-8.0.19.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="MessengerProgram" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <module name="MessengerProgram" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4cfd249-7e40-436d-babc-5c4aac7f9228" name="Default Changelist" comment="" />
+      <created>1588743644541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588743644541</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
