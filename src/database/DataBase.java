@@ -9,6 +9,8 @@ import java.util.ArrayList;
 public class DataBase {
 
     Connection connection;
+    ArrayList<String> keys = new ArrayList<>();
+    int keyCount = 0;
 
     public DataBase() {
         connection = getConnection();
@@ -139,10 +141,11 @@ public class DataBase {
 
     public Object getUserProperty(String name, String column) {
         Object prop = null;
+        keys = new ArrayList<>();
 
         try {
             Statement selectQuery = connection.createStatement();
-            String query = "SELECT "+column+" FROM db_user.users WHERE name LIKE '%"+name+"%';";
+            String query = "SELECT "+column+" FROM db_user.users WHERE name LIKE '"+name+"%';";
             ResultSet results = selectQuery.executeQuery(query);
 
             if(results.next()) {
@@ -155,44 +158,29 @@ public class DataBase {
         return prop;
     }
 
-    public ArrayList<String> getKeys() {
-        ArrayList<String> keys = new ArrayList<>();
-
+    public ArrayList<String> getKeys(String name) {
+        keys = new ArrayList<>();
         Statement selectQuery = null;
         try {
             selectQuery = connection.createStatement();
-            String query = "SELECT name FROM db_user.users;";
+            String query = "SELECT name FROM db_user.users WHERE name LIKE '"+name+"%';";
             ResultSet results = selectQuery.executeQuery(query);
 
             while(results.next()) {
                 keys.add(results.getString(1));
+                System.out.println(keys.size());
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        keyCount = keys.size();
 
         return keys;
     }
 
-    public int getCount() {
-
-        int length = 0;
-
-        try {
-            Statement selectQuery = connection.createStatement();
-            String query = "SELECT COUNT(*) FROM db_user.users;";
-            ResultSet results = selectQuery.executeQuery(query);
-
-            if(results.next()) {
-                length = results.getInt(1);
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return length;
-    }
+    public int getCount() { return keyCount; }
 
     public void setAsOffline(String name) {
         try {

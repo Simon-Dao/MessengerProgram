@@ -41,8 +41,6 @@ public class Server {
             Socket client = server.accept();
             USER_COUNT++;
 
-            //System.out.println("id "+id);
-
             ClientHandler clientThread = new ClientHandler(client, clients, USER_COUNT);
             clients.add(clientThread);
             pool.execute(clientThread);

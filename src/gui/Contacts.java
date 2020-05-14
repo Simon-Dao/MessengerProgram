@@ -1,6 +1,7 @@
 package gui;
 
 import javafx.scene.control.ScrollPane;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -95,6 +96,11 @@ public class Contacts {
             pane.getChildren().add(profile);
             pane.getChildren().add(name);
             pane.getChildren().add(message);
+            pane.addEventFilter(MouseEvent.MOUSE_CLICKED, mouse -> {
+                //TODO make it turn gray when selected
+                System.out.println("showing messages");
+            });
+
             contact.getChildren().add(pane);
         }
     }

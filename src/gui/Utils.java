@@ -162,6 +162,10 @@ public class Utils {
         return userColor;
     }
 
+    public void friendRequestAccepted(String sender, String reciever) {
+        Main.client.out.println("!accepted!!from!"+sender+" !to!"+reciever);
+    }
+
     public void instantiateLocalData() {
         Main.localUser = new LocalUser();
     }

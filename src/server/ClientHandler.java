@@ -16,6 +16,8 @@ public class ClientHandler implements Runnable, Serializable {
 
     public PrintWriter out;
 
+    public String name = "";
+
     public int id;
 
     /*
@@ -49,6 +51,7 @@ public class ClientHandler implements Runnable, Serializable {
         !getperson!
         !friendrequest!
         !offline!
+        !accepted!
 
      */
     @Override
@@ -78,16 +81,18 @@ public class ClientHandler implements Runnable, Serializable {
 
                 } else if (request.startsWith("!keyrequest!")) {
 
-                    sendUserKeys();
+                    sendUserKeys(request);
 
                 } else if (request.startsWith("!friendrequest!")) {
 
-                    //sendFriendRequest(request);
+                    sendFriendRequest(request);
 
                 } else if (request.startsWith("!offline!")) {
 
                     String name = request.substring(9);
                     setToOffline(name);
+                } else if (request.startsWith("!accepted!")) {
+                    newFriend(request);
                 }
             }
         } catch (Exception e) {
@@ -126,6 +131,7 @@ public class ClientHandler implements Runnable, Serializable {
         int[] div = {str.indexOf(" "), str.substring(str.indexOf(" ") + 1).indexOf(" ") + str.indexOf(" ")};
 
         String name = str.substring(9, str.indexOf(" "));
+        this.name = name;
         String password = str.substring(div[0] + 1, div[1] + 1);
         String color = str.substring(div[1] + 2);
 
@@ -138,6 +144,7 @@ public class ClientHandler implements Runnable, Serializable {
     private void checkIfAccountExists(String request) {
         //make code that checks if that account exists
         String name = request.substring(10, request.indexOf(";"));
+        this.name = name;
         String password = request.substring(request.indexOf(";") + 1);
 
         if (Server.dataBase.verifyLoginData(name, password)) {
@@ -168,11 +175,14 @@ public class ClientHandler implements Runnable, Serializable {
         outToAll(name, color, message);
     }
 
-    //TODO make this use mysql database
-    private void sendUserKeys() {
+    private void sendUserKeys(String request) {
 
-        out.println("!length!" + Server.dataBase.getCount()
-                + " !keylist!" + Server.dataBase.getKeys().toString()
+        String name = request.substring(12);
+        String keys = Server.dataBase.getKeys(name).toString();
+        int count = Server.dataBase.getCount();
+
+        out.println("!length!" + count
+                + " !keylist!" + keys
                 .replace("[", "")
                 .replace("]", "")
                 .replace(",", "")
@@ -194,21 +204,20 @@ public class ClientHandler implements Runnable, Serializable {
     }
 
     private void sendFriendRequest(String request) {
-        /*
+
         String senderName = request.substring(23, request.indexOf(" "));
         String senderColor = Server.dataBase.getUserProperty(senderName, "color").toString();
         String recieverName = request.substring(request.indexOf(" ")).substring(11);
-        int recieverid = Server.dataBase.table.get(recieverName).id;
 
         //TODO fix server error not sending friend request to the right person after logging in
 
-        for(ClientHandler c: clients) {
-            if(c.id == recieverid) {
-                out.println("!friendrequest!!sender!" + senderName +" !color!"+senderColor);
+        for (ClientHandler c : clients) {
+
+            if (c.name.equals(recieverName) && c != this) {
+                c.out.println("!friendrequest!!sender!" + senderName + " !color!" + senderColor);
                 break;
             }
         }
-        */
     }
 
     private void setToOffline(String name) {
@@ -219,6 +228,17 @@ public class ClientHandler implements Runnable, Serializable {
     private void setToOnline(String name) {
 
         Server.dataBase.setAsOnline(name);
+    }
+
+    private void newFriend(String request) {
+        String sender = request.substring(16, request.indexOf(" "));
+        String reciever = request.substring(request.indexOf(" ")+ 5);
+
+        for(ClientHandler c : clients) {
+            if(c.name.equals(reciever)) {
+                c.out.println("!newfriend!"+sender+" !color!"+Server.dataBase.getUserProperty(sender, "color"));
+            }
+        }
     }
 }
 

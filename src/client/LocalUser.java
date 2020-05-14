@@ -1,5 +1,6 @@
 package client;
 
+import javafx.application.Platform;
 import javafx.scene.paint.Color;
 import database.Friend;
 import main.Main;
@@ -87,7 +88,13 @@ public class LocalUser {
 
     public void addFriend(String username, String color) {
 
+        //for the client
+        Platform.runLater(() -> Main.app.contactsArea.addContact(username, color));
+
+        //for the searchbar
         Main.app.contactsArea.addContact(username, color);
+
+        System.out.println("adding");
 
         Friend newFriend = new Friend(username, color);
         friends.add(newFriend);

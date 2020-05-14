@@ -3,16 +3,13 @@ package main;
 //import gui.*;
 import client.Client;
 import client.LocalUser;
+import gui.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import gui.SignUpWindow;
-import gui.Utils;
-import gui.WindowControls;
-import gui.Gui;
-import gui.LoginWindow;
+
 
 public class Main extends Application {
 

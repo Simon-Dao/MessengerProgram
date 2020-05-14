@@ -38,7 +38,7 @@ public class SearchBarSection {
         searchTextfield.setPromptText("search for people!");
         searchTextfield.setLayoutX(10);
         searchTextfield.setLayoutY(26);
-        addSuggestionsDropDown(searchTextfield);
+        addSuggestionsDropDown();
 
         //button that sends a friend request to friends
         Button searchButton = new Button("search");
@@ -67,9 +67,8 @@ public class SearchBarSection {
      * adds a dropdown menu displaying the
      * suggested names the user is searching for
      *
-     * @param field is the textfield provided from the constructor
      */
-    private void addSuggestionsDropDown(TextField field) {
+    private void addSuggestionsDropDown() {
 
         /*
         event handler listens for key input and creates a list
@@ -79,18 +78,20 @@ public class SearchBarSection {
             @Override
             public void handle(Event event) {
 
-                suggestions = getUserKeys();
-
-                TextFields.bindAutoCompletion(field, suggestions);
+                try {
+                    if(searchTextfield.getText().length() > 0)
+                    suggestions = getUserKeys();
+                    TextFields.bindAutoCompletion(searchTextfield, suggestions);
+                } catch (Exception e) {}
             }
         };
 
-        field.addEventFilter(KeyEvent.KEY_RELEASED, searchBarEvent);
+        searchTextfield.addEventFilter(KeyEvent.KEY_RELEASED, searchBarEvent);
     }
 
-    public String[] getUserKeys() {
+    public String[] getUserKeys() throws Exception{
 
-        tools.sendMessage("!keyrequest!");
+        tools.sendMessage("!keyrequest!"+searchTextfield.getText());
 
         try {
             Thread.sleep(100);
@@ -107,7 +108,7 @@ public class SearchBarSection {
 
             suggestions = new String[length];
 
-            int divider = 19;
+            int divider = x.indexOf(" ")+10;
 
             for (int i = 0; i < length; i++) {
                 String y = x.substring(divider);
@@ -124,8 +125,9 @@ public class SearchBarSection {
             @Override
             public void handle(Event event) {
 
-                tools.sendMessage("!friendrequest!!sender!" + Main.localUser.getName()
-                        + " !reciever!" + searchTextfield.getText());
+                if(searchTextfield.getText().length() > 0) {
+                    new AddFriendWindow(searchTextfield.getText());
+                }
             }
         };
         button.setOnAction(event);
@@ -138,6 +140,7 @@ public class SearchBarSection {
             public void handle(ActionEvent e) {
                 notificationsMenu.getItems().remove(notification);
                 Main.localUser.addFriend(name, color);
+                tools.friendRequestAccepted(Main.localUser.getName(), name);
             }
         };
         notification.setOnAction(event1);

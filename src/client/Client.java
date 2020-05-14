@@ -4,6 +4,7 @@ import gui.Utils;
 import javafx.application.Platform;
 import javafx.scene.paint.Color;
 import main.Main;
+import server.Server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -31,7 +32,6 @@ public class Client implements Runnable {
         server = new Socket(IP, PORT);
         out = new PrintWriter(server.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(server.getInputStream()));
-
 
     }
 
@@ -80,7 +80,11 @@ public class Client implements Runnable {
                     String color = serverResponse.substring(serverResponse.indexOf(" ") + 8);
 
                         Main.app.searchBarLayout.addNotification(name, color);
-                    }
+                } else if (serverResponse.startsWith("!newfriend!")) {
+                    String name = serverResponse.substring(11,serverResponse.indexOf(" "));
+                    String color = serverResponse.substring(serverResponse.indexOf(" ") + 8);
+                    Main.localUser.addFriend(name, color);
+                  }
                 }
         } catch (Exception e) {
             //e.printStackTrace();
